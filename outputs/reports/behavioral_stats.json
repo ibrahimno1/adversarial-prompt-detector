@@ -1,0 +1,252 @@
+{
+  "compliance_rates": [
+    {
+      "model": "llama3:8b",
+      "category": "direct_adversarial",
+      "label": "refusal",
+      "count": 405,
+      "n": 412,
+      "rate_pct": 98.3
+    },
+    {
+      "model": "llama3:8b",
+      "category": "direct_adversarial",
+      "label": "partial_compliance",
+      "count": 5,
+      "n": 412,
+      "rate_pct": 1.2
+    },
+    {
+      "model": "llama3:8b",
+      "category": "direct_adversarial",
+      "label": "full_compliance",
+      "count": 2,
+      "n": 412,
+      "rate_pct": 0.5
+    },
+    {
+      "model": "llama3:8b",
+      "category": "indirect_adversarial",
+      "label": "refusal",
+      "count": 106,
+      "n": 112,
+      "rate_pct": 94.6
+    },
+    {
+      "model": "llama3:8b",
+      "category": "indirect_adversarial",
+      "label": "partial_compliance",
+      "count": 4,
+      "n": 112,
+      "rate_pct": 3.6
+    },
+    {
+      "model": "llama3:8b",
+      "category": "indirect_adversarial",
+      "label": "full_compliance",
+      "count": 2,
+      "n": 112,
+      "rate_pct": 1.8
+    },
+    {
+      "model": "llama3:8b",
+      "category": "multiturn_adversarial",
+      "label": "refusal",
+      "count": 5,
+      "n": 8,
+      "rate_pct": 62.5
+    },
+    {
+      "model": "llama3:8b",
+      "category": "multiturn_adversarial",
+      "label": "partial_compliance",
+      "count": 1,
+      "n": 8,
+      "rate_pct": 12.5
+    },
+    {
+      "model": "llama3:8b",
+      "category": "multiturn_adversarial",
+      "label": "full_compliance",
+      "count": 2,
+      "n": 8,
+      "rate_pct": 25.0
+    },
+    {
+      "model": "llama3:8b",
+      "category": "benign_control",
+      "label": "refusal",
+      "count": 35,
+      "n": 113,
+      "rate_pct": 31.0
+    },
+    {
+      "model": "llama3:8b",
+      "category": "benign_control",
+      "label": "partial_compliance",
+      "count": 12,
+      "n": 113,
+      "rate_pct": 10.6
+    },
+    {
+      "model": "llama3:8b",
+      "category": "benign_control",
+      "label": "full_compliance",
+      "count": 66,
+      "n": 113,
+      "rate_pct": 58.4
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "direct_adversarial",
+      "label": "refusal",
+      "count": 402,
+      "n": 412,
+      "rate_pct": 97.6
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "direct_adversarial",
+      "label": "partial_compliance",
+      "count": 5,
+      "n": 412,
+      "rate_pct": 1.2
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "direct_adversarial",
+      "label": "full_compliance",
+      "count": 5,
+      "n": 412,
+      "rate_pct": 1.2
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "indirect_adversarial",
+      "label": "refusal",
+      "count": 90,
+      "n": 112,
+      "rate_pct": 80.4
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "indirect_adversarial",
+      "label": "partial_compliance",
+      "count": 9,
+      "n": 112,
+      "rate_pct": 8.0
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "indirect_adversarial",
+      "label": "full_compliance",
+      "count": 13,
+      "n": 112,
+      "rate_pct": 11.6
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "multiturn_adversarial",
+      "label": "refusal",
+      "count": 5,
+      "n": 8,
+      "rate_pct": 62.5
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "multiturn_adversarial",
+      "label": "partial_compliance",
+      "count": 1,
+      "n": 8,
+      "rate_pct": 12.5
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "multiturn_adversarial",
+      "label": "full_compliance",
+      "count": 2,
+      "n": 8,
+      "rate_pct": 25.0
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "benign_control",
+      "label": "refusal",
+      "count": 19,
+      "n": 113,
+      "rate_pct": 16.8
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "benign_control",
+      "label": "partial_compliance",
+      "count": 11,
+      "n": 113,
+      "rate_pct": 9.7
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "benign_control",
+      "label": "full_compliance",
+      "count": 83,
+      "n": 113,
+      "rate_pct": 73.5
+    }
+  ],
+  "statistical_tests": [
+    {
+      "model": "llama3:8b",
+      "test": "chi2 (category vs label)",
+      "chi2": 335.002,
+      "p_value": 0.0,
+      "dof": 3,
+      "significant": true,
+      "note": "collapsed to refusal/non-refusal (min expected cell = 0.3)"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "test": "chi2 (category vs label)",
+      "chi2": 363.024,
+      "p_value": 0.0,
+      "dof": 3,
+      "significant": true,
+      "note": "collapsed to refusal/non-refusal (min expected cell = 0.3)"
+    },
+    {
+      "model": "both",
+      "test": "chi2 (model vs label | Direct)",
+      "chi2": 1.297,
+      "p_value": 0.5229,
+      "dof": 2,
+      "significant": false,
+      "note": ""
+    },
+    {
+      "model": "both",
+      "test": "chi2 (model vs label | Indirect)",
+      "chi2": 11.296,
+      "p_value": 0.0035,
+      "dof": 2,
+      "significant": true,
+      "note": ""
+    },
+    {
+      "model": "both",
+      "test": "chi2 (model vs label | Multi-turn)",
+      "chi2": 0.0,
+      "p_value": 1.0,
+      "dof": 2,
+      "significant": false,
+      "note": ""
+    },
+    {
+      "model": "both",
+      "test": "chi2 (model vs label | Benign)",
+      "chi2": 6.724,
+      "p_value": 0.0347,
+      "dof": 2,
+      "significant": true,
+      "note": ""
+    }
+  ]
+}

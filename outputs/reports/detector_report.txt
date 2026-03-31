@@ -1,0 +1,239 @@
+
+============================================================
+Logistic Regression  |  llama_only_is_adversarial
+============================================================
+  accuracy            0.9271 ± 0.0170
+  precision           0.9451 ± 0.0135
+  recall              0.9681 ± 0.0193
+  f1_macro            0.8678 ± 0.0304
+  fpr                 0.2648 ± 0.0664
+  roc_auc             0.9177
+
+              precision    recall  f1-score   support
+
+      benign       0.83      0.73      0.78       113
+ adversarial       0.94      0.97      0.96       532
+
+    accuracy                           0.93       645
+   macro avg       0.89      0.85      0.87       645
+weighted avg       0.92      0.93      0.93       645
+
+
+============================================================
+Random Forest  |  llama_only_is_adversarial
+============================================================
+  accuracy            0.9302 ± 0.0182
+  precision           0.9469 ± 0.0114
+  recall              0.9700 ± 0.0179
+  f1_macro            0.8735 ± 0.0324
+  fpr                 0.2565 ± 0.0559
+  roc_auc             0.9062
+
+              precision    recall  f1-score   support
+
+      benign       0.84      0.74      0.79       113
+ adversarial       0.95      0.97      0.96       532
+
+    accuracy                           0.93       645
+   macro avg       0.89      0.86      0.87       645
+weighted avg       0.93      0.93      0.93       645
+
+
+============================================================
+Logistic Regression  |  llama_only_is_compliant
+============================================================
+  accuracy            0.9736 ± 0.0194
+  precision           0.8919 ± 0.0759
+  recall              0.9368 ± 0.0865
+  f1_macro            0.9481 ± 0.0381
+  fpr                 0.0199 ± 0.0148
+  roc_auc             0.9808
+
+              precision    recall  f1-score   support
+
+      benign       0.99      0.98      0.98       551
+ adversarial       0.89      0.94      0.91        94
+
+    accuracy                           0.97       645
+   macro avg       0.94      0.96      0.95       645
+weighted avg       0.97      0.97      0.97       645
+
+
+============================================================
+Random Forest  |  llama_only_is_compliant
+============================================================
+  accuracy            0.9829 ± 0.0139
+  precision           0.9151 ± 0.0748
+  recall              0.9790 ± 0.0288
+  f1_macro            0.9672 ± 0.0257
+  fpr                 0.0163 ± 0.0149
+  roc_auc             0.9926
+
+              precision    recall  f1-score   support
+
+      benign       1.00      0.98      0.99       551
+ adversarial       0.91      0.98      0.94        94
+
+    accuracy                           0.98       645
+   macro avg       0.95      0.98      0.97       645
+weighted avg       0.98      0.98      0.98       645
+
+
+============================================================
+Logistic Regression  |  openai_only_is_adversarial
+============================================================
+  accuracy            0.9364 ± 0.0185
+  precision           0.9663 ± 0.0187
+  recall              0.9568 ± 0.0182
+  f1_macro            0.8910 ± 0.0339
+  fpr                 0.1605 ± 0.0940
+  roc_auc             0.9576
+
+              precision    recall  f1-score   support
+
+      benign       0.81      0.84      0.82       113
+ adversarial       0.97      0.96      0.96       532
+
+    accuracy                           0.94       645
+   macro avg       0.89      0.90      0.89       645
+weighted avg       0.94      0.94      0.94       645
+
+
+============================================================
+Random Forest  |  openai_only_is_adversarial
+============================================================
+  accuracy            0.9364 ± 0.0168
+  precision           0.9769 ± 0.0143
+  recall              0.9455 ± 0.0178
+  f1_macro            0.8958 ± 0.0271
+  fpr                 0.1063 ± 0.0663
+  roc_auc             0.9639
+
+              precision    recall  f1-score   support
+
+      benign       0.78      0.89      0.83       113
+ adversarial       0.98      0.95      0.96       532
+
+    accuracy                           0.94       645
+   macro avg       0.88      0.92      0.90       645
+weighted avg       0.94      0.94      0.94       645
+
+
+============================================================
+Logistic Regression  |  openai_only_is_compliant
+============================================================
+  accuracy            0.9411 ± 0.0322
+  precision           0.8589 ± 0.0598
+  recall              0.8459 ± 0.1560
+  f1_macro            0.9048 ± 0.0594
+  fpr                 0.0348 ± 0.0175
+  roc_auc             0.9816
+
+              precision    recall  f1-score   support
+
+      benign       0.96      0.97      0.96       516
+ adversarial       0.86      0.84      0.85       129
+
+    accuracy                           0.94       645
+   macro avg       0.91      0.91      0.91       645
+weighted avg       0.94      0.94      0.94       645
+
+
+============================================================
+Random Forest  |  openai_only_is_compliant
+============================================================
+  accuracy            0.9581 ± 0.0178
+  precision           0.8608 ± 0.0478
+  recall              0.9461 ± 0.0797
+  f1_macro            0.9366 ± 0.0287
+  fpr                 0.0387 ± 0.0152
+  roc_auc             0.9786
+
+              precision    recall  f1-score   support
+
+      benign       0.99      0.96      0.97       516
+ adversarial       0.86      0.95      0.90       129
+
+    accuracy                           0.96       645
+   macro avg       0.92      0.95      0.94       645
+weighted avg       0.96      0.96      0.96       645
+
+
+============================================================
+Logistic Regression  |  combined_is_adversarial
+============================================================
+  accuracy            0.9295 ± 0.0190
+  precision           0.9509 ± 0.0118
+  recall              0.9642 ± 0.0140
+  f1_macro            0.8747 ± 0.0334
+  fpr                 0.2345 ± 0.0578
+  roc_auc             0.9515
+
+              precision    recall  f1-score   support
+
+      benign       0.82      0.77      0.79       226
+ adversarial       0.95      0.96      0.96      1064
+
+    accuracy                           0.93      1290
+   macro avg       0.89      0.86      0.87      1290
+weighted avg       0.93      0.93      0.93      1290
+
+
+============================================================
+Random Forest  |  combined_is_adversarial
+============================================================
+  accuracy            0.9450 ± 0.0100
+  precision           0.9653 ± 0.0070
+  recall              0.9680 ± 0.0062
+  f1_macro            0.9042 ± 0.0177
+  fpr                 0.1638 ± 0.0340
+  roc_auc             0.9634
+
+              precision    recall  f1-score   support
+
+      benign       0.85      0.84      0.84       226
+ adversarial       0.97      0.97      0.97      1064
+
+    accuracy                           0.94      1290
+   macro avg       0.91      0.90      0.90      1290
+weighted avg       0.94      0.94      0.94      1290
+
+
+============================================================
+Logistic Regression  |  combined_is_compliant
+============================================================
+  accuracy            0.9666 ± 0.0085
+  precision           0.8849 ± 0.0312
+  recall              0.9282 ± 0.0190
+  f1_macro            0.9428 ± 0.0145
+  fpr                 0.0253 ± 0.0071
+  roc_auc             0.9911
+
+              precision    recall  f1-score   support
+
+      benign       0.98      0.97      0.98      1067
+ adversarial       0.88      0.93      0.91       223
+
+    accuracy                           0.97      1290
+   macro avg       0.93      0.95      0.94      1290
+weighted avg       0.97      0.97      0.97      1290
+
+
+============================================================
+Random Forest  |  combined_is_compliant
+============================================================
+  accuracy            0.9721 ± 0.0064
+  precision           0.8849 ± 0.0227
+  recall              0.9640 ± 0.0201
+  f1_macro            0.9528 ± 0.0109
+  fpr                 0.0262 ± 0.0053
+  roc_auc             0.9922
+
+              precision    recall  f1-score   support
+
+      benign       0.99      0.97      0.98      1067
+ adversarial       0.88      0.96      0.92       223
+
+    accuracy                           0.97      1290
+   macro avg       0.94      0.97      0.95      1290
+weighted avg       0.97      0.97      0.97      1290
